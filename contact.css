@@ -1,0 +1,109 @@
+/* Container for both sections */
+.social-email-container {
+    background-color: whitesmoke;
+    height: 500px;
+    width: auto;
+    display: flex;
+    justify-content: center; /* Center the entire container */
+    align-items: center; /* Vertically center content */
+    gap: 30px; /* Space between the email form and social media links */
+    margin: 40px auto; /* Center the container horizontally */
+    text-align: center; /* Center text inside */
+}
+
+/* Social Media Links Section */
+.social-media-contact-links {
+    text-align: left; /* Aligns the social media links to the left inside their container */
+}
+
+.social-media-contact-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-media-contact-links li {
+    margin-bottom: 15px;
+}
+
+.social-media-contact-links a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.social-media-contact-links i {
+    color: black;
+    font-size: 50px; /* Icon size */
+    margin-right: 10px;
+}
+
+.social-media-contact-links p {
+    /* margin-left: 50px; */
+    font-size: 16px;
+    color: #333;
+}
+
+/* Email Subscription Form Section */
+.newsletter-subscription-form {
+    margin-right: 100px;
+    max-width: 500px; /* Limit form width */
+    flex-grow: 1; /* Allow the form to grow within the available space */
+    text-align: left; /* Left-align the content inside */
+}
+
+.newsletter-subscription-form h4 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.newsletter-subscription-form form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+    align-items: flex-start; /* Left-align form elements */
+}
+
+.newsletter-subscription-form form input {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 100%; /* Make input field take full width */
+}
+
+.newsletter-subscription-form form button {
+    background-color: #6b6424;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter-subscription-form form button span {
+    margin-right: 10px;
+}
+
+/* Hover effect for social media links */
+.social-media-contact-links a:hover {
+    opacity: 0.8;
+}
+
+.newsletter-subscription-form form button:hover {
+    background-color: #8e8756;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .social-email-container {
+        flex-direction: column; /* Stacks sections vertically on smaller screens */
+        gap: 20px; /* Adjusts the gap when stacked */
+    }
+
+    .newsletter-subscription-form form input {
+        width: 100%; /* Makes input fields take full width on small screens */
+    }
+}
