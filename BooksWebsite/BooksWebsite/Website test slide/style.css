@@ -1,0 +1,46 @@
+html, body {
+	font-family: "Poppins", sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #ffffff;
+  }
+  
+  body::before {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url("books-fs-image/caythongnoel.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	filter: blur(1px);
+	z-index: -1;
+  }
+  
+  .section {
+	padding: 20px;
+    height: 20px;
+    width: auto;
+	min-height: 700px;
+	text-align: center;
+	font-family: sans-serif, arial;
+	margin: 0;
+  }
+  
+  h1, p {
+	margin: 0;
+	font-family: sans-serif, arial;
+	font-weight: bold;
+  }
+
+  h1.title {
+    margin-top:180px;
+}
+  .title-tx {
+	font-size: 20px;
+	opacity: 0.8;
+  }

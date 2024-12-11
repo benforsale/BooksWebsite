@@ -1,0 +1,143 @@
+#free-ebooks.modern {
+    background: linear-gradient(135deg, #ffffff00, #f1f1f800);
+    text-align: center;
+}
+
+#free-ebooks .header {
+    margin-bottom: 30px;
+}
+
+#free-ebooks .title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #689e22;
+}
+
+#free-ebooks .subtitle {
+    color: #ffffff;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.book-item {
+    background: transparent;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-item:hover {
+    transform: translateY(-10px); /* Lift effect */
+    box-shadow: 0 12px 30px rgb(0, 0, 0);
+}
+
+.book-image {
+    padding: 10px;
+    justify-content: center;
+    height: 220px;
+    width: 150px;
+    margin-bottom: -15px;
+}
+
+.book-image img {
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.book-info {
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.book-info h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #c2bca1;
+    margin-bottom: 10px;
+}
+
+.book-info .description {
+    font-size: 1rem;
+    color: #ffffff;
+    flex-grow: 1;
+}
+
+.book-info .btn {
+    background: linear-gradient(135deg, #02160641, #39372627);
+    color: white;
+    border: 0px solid #7b8d56;
+    padding: 7px 3px;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.book-info .btn:hover {
+    background: linear-gradient(135deg, #284d3d, #7b8d56);
+    color: #fdf1b8;
+    border-color: #7b8d56;
+    transform: scale(1.05);
+}
+
+.pagination {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.page-btn {
+    background-color: #f5f5fa0e;
+    color: #ffffff;
+    border: 1px solid #dddddd0a;
+    padding: 7px 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+    min-width: 45px;
+}
+
+.page-btn:hover {
+    background-color: #6b6424;
+    color: white;
+    border-color: #6b6424;
+    transform: translateY(-2px);
+}
+
+.page-btn.active {
+    background-color: #6b6424;
+    color: white;
+    font-weight: bold;
+    border-color: #6b6424;
+}
+
+.ellipsis {
+    font-size: 1.2rem;
+    color: #999;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 20px;
+}

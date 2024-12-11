@@ -1,0 +1,74 @@
+/* Navigation container */
+.nav {
+    background-color: rgba(0, 0, 0, 0.82); /* Semi-transparent black background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 10px 20px; /* Inner spacing for the navigation */
+    position: sticky; /* Keeps the nav bar at the top */
+    top: 0;
+    z-index: 1000; /* Ensures the nav stays on top of other elements */
+}
+
+/* Navigation layout */
+.nav nav {
+    display: flex; /* Flexbox for alignment */
+    justify-content: space-between; /* Space between the logo and links */
+    align-items: center; /* Align items vertically */
+}
+
+/* Logo styling */
+.nav .logo {
+    font-size: 24px; /* Larger font for the logo */
+    font-weight: bold; /* Make the logo prominent */
+    font-family: 'Arial', sans-serif; /* Clean, professional font */
+    margin: 0; /* No extra margin */
+    color: white; /* White text for the logo */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for readability */
+}
+
+/* Navigation links container */
+.nav .nav-links {
+    display: flex; /* Flex layout for horizontal alignment */
+    gap: 20px; /* Space between navigation links */
+}
+
+/* Individual link styling */
+.nav .nav-links a {
+    text-decoration: none; /* Remove underline from links */
+    font-size: 18px; /* Standard font size */
+    font-family: 'Arial', sans-serif; /* Matches the logo's font style */
+    color: white; /* White text for links */
+    padding: 8px 12px; /* Add padding inside the links */
+    border-radius: 25px; /* Rounded corners for a modern look */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for links */
+.nav .nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly transparent white hover background */
+    color: #000000; /* Black text on hover for contrast */
+}
+
+/* Media Query for Phone (Portrait) */
+@media (max-width: 480px) {
+    .nav nav {
+        flex-direction: row;
+        justify-content: space-between; /* Space elements evenly */
+    }
+
+    .nav .nav-links {
+        flex-direction: row;
+        gap: 15px; /* Adjust space between the links */
+        padding: 0; /* Remove any extra padding */
+    }
+
+    .nav .logo {
+        font-size: 19px; /* Adjust logo size to fit small screen */
+        margin-bottom: 0; /* Remove any bottom margin */
+    }
+
+    /* Adjust link styling */
+    .nav .nav-links a {
+        font-size: 14px; /* Smaller font size for phone */
+        padding: 0px 0px; /* Adjust padding for better spacing */
+    }
+}

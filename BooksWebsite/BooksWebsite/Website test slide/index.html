@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToanBooks - Explore, Share, and Buy Books</title>
+    <link rel="stylesheet" href="ebooks.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="searchbar.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="books-for-sale.css">
+    <link rel="stylesheet" href="contact.css">
+
+  
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+ 
+    <div class="nav">
+        <nav>
+            <div class="logo">Madin Heaven</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#book-slider">Recommended</a>
+                <a href="#free-ebooks">Free eBooks</a>
+                <a href="#books-for-sale">Sell Books</a>
+                <a href="#contact">About & Contact</a>
+            </div>
+        </nav>
+    </div>
+
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+ 
+    <!-- Page 1 _ Start -->
+    <div id="home" class="section">
+        <h1 class="title">
+            Welcome to Madin Heaven
+            <div class="title-tx">Discover Books, Share Knowledge, Build Dreams</div>
+            <form method="GET" id="search" role="search" aria-label="top search bar" style="padding: 30px;">
+                <div class="search">
+                    <span class="search-icon material-symbols-outlined" style="cursor: pointer;" onclick="document.getElementById('search').submit();">search</span>
+                    <input
+                        class="search-input"
+                        type="search"
+                        placeholder="Search"
+                        aria-label="Search"
+                        name="query"
+                        autocapitalize="off"
+                        autocomplete="off"
+                        autocorrect="off"
+                        spellcheck="false"
+                        role="searchbox">
+                </div>
+            </form>
+        </h1>
+    </div>
+      
+    
+    <!-- Page 1 _ End -->
+
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+ 
+    <!-- Page 2 _ Start -->
+    <section id="book-slider">
+        <h1 class="slider-heading"></h1>
+
+        <div class="slider-container">
+            <button class="arrow left-arrow">
+                <span class="material-symbols-outlined">arrow_back_ios</span>
+            </button>
+
+            <div class="slider-wrapper">
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <div class="content">
+                        <h2>To Kill a Mockingbird</h2>
+                        <p>A masterpiece on racial injustice and moral growth by Harper Lee.</p>
+                        <p>
+                            In the 33 years since its publication, <i>To Kill a Mockingbird</i> has never been the focus of a dissertation, and it has been the subject of only six literary studies, several of them no more than a couple of pages long.
+                        </p>
+                        <div class="btn-wrap">
+                            <span>— Claudia Johnson in <i>To Kill a Mockingbird: Threatening Boundaries</i>, 1994</span>
+                        </div>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                    <img src="rcm-ebooks/800px-To_Kill_a_Mockingbird_(first_edition_cover).jpg" alt="To Kill a Mockingbird">
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <div class="content">
+                        <h2>Crime and Punishment</h2>
+                        <p>Explore guilt, morality, and redemption with Fyodor Dostoevsky.</p>
+                        <p>
+                            Raskolnikov, a desperate former student in St. Petersburg, murders a woman without remorse, believing himself above moral law, like Napoleon. As he faces a shrewd investigator, guilt consumes him. Only Sonya, a humble sex worker, offers him a path to redemption.
+                        </p>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                    <img src="rcm-ebooks/CrimeandPunishment.png" alt="Crime and Punishment">
+                </div>
+            </div>
+
+            <button class="arrow right-arrow">
+                <span class="material-symbols-outlined">arrow_forward_ios</span>
+            </button>
+        </div>
+    </section>    
+        
+    
+    <script src="book-slider.js"></script>
+    
+    <!-- Page 2 _ End -->
+
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+ 
+    <!-- Page 3 _ Start -->
+
+    <!-- Free eBooks Section -->
+    <div id="free-ebooks" class="section modern">
+        <div class="header">
+            <h1 style="margin-top: 40px;" class="title">Free eBooks</h1>
+            <p class="subtitle">Heavy books? Nah. Our eBooks are light, fast, and don’t require a spotter!</p>
+        </div>
+        <div class="book-grid">
+        </div>
+        <div class="pagination">
+        </div>
+    </div>
+
+    <script src="free-ebooks.js"></script>
+</body>
+</html>
+
+    <!-- Page 3 _ End -->
+
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+
+    <!-- Page 4 _ Start -->
+
+    <div id="books-for-sale" class="section">
+        <div class="header">
+            <h1 style="margin-top: auto;" class="title">Books for Sale</h1>
+            <p class="subtitle">Click on a book to view details!!!</p>
+        </div>
+        <div class="book-grid" id="books-for-sale-grid">
+        </div>
+        <div id="book-open" class="book-view hidden">
+            <div class="book">
+                <div class="book-cover">
+                    <img src="" alt="Book Cover" id="book-cover-image">
+                </div>
+                <div class="book-content">
+                    <h3 id="book-title"></h3>
+                    <p id="book-description"></p>
+                    <p class="price" id="book-price"></p>
+                    <button class="btn read-more">Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="books-for-sale.js"></script>
+
+    <!-- Page 4 _ End -->
+
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+ 
+    <!-- Page 5 _ Start -->
+
+    <div id="contact" class="social-email-container">
+        <div class="newsletter-subscription-form">
+            <h4>Submit your email below to stay informed about our newest book releases. By doing so, you consent to our policy and license agreement, keeping our partnership smooth and transparent.</h4>
+            <form id="form">
+                <input type="text" name="email" placeholder="Enter your email here">
+                <button class="btn-subscribe">
+                    <span>Send</span>
+                    <i class="icon icon-send"></i>
+                </button>
+            </form>
+        </div>
+    
+        <div class="social-media-contact-links">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/ktoan.n.n/" target="_blank">
+                        <i class="fab fa-facebook icon-facebook custom-icon"></i>
+                        <p>Khánh Toàn</p>
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="https://www.instagram.com/_khtoan/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                        <p>Khánh Toàn</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    
+
+    <!-- Page 5 _ End -->
+
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+
+    <script>
+        window.slide = new SlideNav({
+            changeHash: true
+        });
+    </script>
+
+<!-- // Project by Khánh Toàn -->
+<!-- // This project offers free ebooks for download and also provides ebooks for sale. -->
+
+</body>
+</html>
