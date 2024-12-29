@@ -1,0 +1,161 @@
+/* General Section Styling */
+#books-for-sale { 
+    padding: 20px;
+    height: 20px;
+    width: auto; 
+    background-color: #00000036; 
+    text-align: center; 
+}
+
+#books-for-sale .header .title { 
+    font-size: 5rem; 
+    color: #ffffff; 
+    margin-bottom: 5px; 
+}
+
+#books-for-sale .header .subtitle { 
+    font-size: 1.6rem; 
+    color: #ffffff; 
+    margin-bottom: 15px; 
+}
+
+/* Book Grid */
+#books-for-sale .book-grid { 
+    margin-top: 150px;
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(10px, 1fr)); 
+    gap: 10px; 
+}
+
+#books-for-sale .book-item { 
+    height: 260px;
+    width: 190px
+    background: #ffffff0e; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+    /* filter: drop-shadow(0 0 1em gray) */
+    padding: 10px; 
+    text-align: center; 
+    cursor: pointer; 
+    transition: transform 0.2s ease-in-out; 
+}
+
+#books-for-sale .book-item:hover { 
+    transform: scale(1.05); 
+}
+
+/* Book View */
+#books-for-sale .book-view { 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100vw; 
+    height: 100vh; 
+    background-color: rgba(0, 0, 0, 0.277); 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    z-index: 1000; 
+    perspective: 1500px; 
+}
+
+#books-for-sale .book-view.hidden { 
+    display: none; 
+}
+
+/* Book Opening Effect */
+#books-for-sale .book { 
+    display: flex; 
+    width: 600px; 
+    max-width: 90%; 
+    height: 400px; 
+    background: rgba(0, 0, 0, 0.625); 
+    border-radius: 10px; 
+    overflow: hidden; 
+    box-shadow: 0 10px 30px rgb(255, 255, 255); 
+    transform-style: preserve-3d; 
+}
+
+/* Book Pages */
+#books-for-sale .book-cover,
+#books-for-sale .book-content { 
+    flex: 1; 
+    backface-visibility: hidden; 
+}
+
+#books-for-sale .book-cover { 
+    background: #6b642400; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+#books-for-sale .book-cover img { 
+    max-width: 80%; 
+    height: auto; 
+    border-radius: 5px; 
+}
+
+#books-for-sale .book-content { 
+    padding: 20px; 
+    background: white; 
+    text-align: left; 
+}
+
+/* Book Title */
+#books-for-sale .book-content h3 { 
+    font-size: 30px; 
+    margin-bottom: 10px; 
+    margin-top: -10px;
+    color: #8e8756; 
+    font: bold;
+}
+
+/* Book Description */
+#books-for-sale .book-content p { 
+    font-size: 12.5px; 
+    margin-bottom: 10px; 
+    color: #333; 
+}
+
+/* Price */
+#books-for-sale .book-content .price {
+    margin-left: 19px; 
+    font-size: 22px; 
+    color: #8c830c; 
+    font-weight: bold;
+}
+
+/* Read More Button */
+#books-for-sale .book-content .read-more { 
+    /* margin-right: 10cm; */
+    display: flex;
+    margin-top: -10px; 
+    background: linear-gradient(135deg, #6b642432, #8e8856b7); 
+    color: white; 
+    border: none; 
+    padding: 10px 15px; 
+    font-size: 1rem; 
+    border-radius: 20px; 
+    cursor: pointer; 
+    transition: background 0.3s ease, transform 0.3s ease; 
+}
+
+#books-for-sale .book-content .read-more:hover { 
+    background: rgba(0, 0, 0, 0.452);
+    transform: scale(1.1); 
+}
+
+/* Book Opening Effect with Spin */
+@keyframes openBookWithSpin { 
+    from { 
+        transform: rotateX(-300deg);
+    }
+    to { 
+        transform: rotateY(0deg); 
+    }
+}
+
+#books-for-sale .book { 
+    animation: openBookWithSpin 0.5s ease-in-out forwards; 
+}

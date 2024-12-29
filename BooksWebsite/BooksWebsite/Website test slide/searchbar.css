@@ -1,0 +1,63 @@
+/* Search Container Styling */
+.search {
+    /* margin-top: 50px; */
+    background: #0000009e; /* Light gray background for contrast */
+    padding: 10px 20px; /* Adjusted padding for better spacing */
+    border-radius: 28px; /* Rounded corners */
+    height: auto; /* Adapts height dynamically */
+    width: 100%; /* Full width for responsiveness */
+    max-width: 450px; /* Limits maximum width */
+    display: flex; /* Flex layout for alignment */
+    align-items: center; /* Centers items vertically */
+    margin: 60px auto; /* Centers horizontally and adds spacing */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.search:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Slightly larger shadow on hover */
+    background: #ececec; /* Light hover effect */
+}
+
+/* Search Input Styling */
+.search-input {
+    font-size: 18px; /* Clean and legible font size */
+    font-family: "Poppins", sans-serif; /* Modern font style */
+    color: #333333; /* Dark gray text color */
+    margin-left: 10px; /* Adds spacing between icon and input */
+    outline: none; /* Removes default browser focus outline */
+    border: none; /* Removes the border */
+    background: transparent; /* Matches background with parent */
+    flex: 1; /* Makes the input grow to fill available space */
+    width: 100%; /* Ensures the input spans the container */
+}
+
+/* Search Icon Styling */
+.search-icon {
+    font-size: 24px; /* Adjust icon size */
+    color: #555555; /* Neutral gray for the icon */
+    margin-right: 10px; /* Spacing between icon and input */
+    align-self: center; /* Centers the icon vertically */
+}
+
+/* Focus Effect on Input */
+.search-input:focus {
+    color: #000000; /* Changes text color to black on focus */
+    font-weight: 500; /* Slightly bolder font weight */
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    .search {
+        width: 90%; /* Adapts to smaller screens */
+        padding: 10px 15px; /* Adjusted padding for mobile */
+    }
+
+    .search-input {
+        font-size: 16px; /* Smaller text size for mobile */
+    }
+
+    .search-icon {
+        font-size: 20px; /* Reduced icon size */
+    }
+}
